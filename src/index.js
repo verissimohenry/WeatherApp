@@ -24,7 +24,7 @@ const picture = (data) => {
 };
 
 const converter = (num) => {
-    return ((num * 9) / 5) + 32;
+  return ((num * 9) / 5) + 32;
 };
 
 const weather = () => {
