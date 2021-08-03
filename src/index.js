@@ -1,4 +1,4 @@
-const api = '9ce157141208c7f7d8b28e7e79719ed2';
+const api = 'df551c78457e070ad9954e8464ff6d84';
 const error = document.getElementById('error');
 const temp = document.getElementById('temp');
 const minTemp1 = document.getElementById('min-temp');
