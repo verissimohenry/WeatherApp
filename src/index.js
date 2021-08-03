@@ -7,7 +7,7 @@ const cel = document.getElementById('cel');
 const fah = document.getElementById('fah');
 const image = document.getElementById('image');
 const getData = (city) => {
-  const data = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api}&units=metric`).then((res) => res.json() .catch((error) => { console.error('Error:', error);}));
+  const data = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api}&units=metric`).then((res) => res.json().catch((error) => { console.error('Error:', error); }));
   return data;
 };
 
@@ -21,11 +21,11 @@ const picture = (data) => {
   } else if (data.main.temp > 20) {
     image.src = 'https://amayei.nyc3.digitaloceanspaces.com/2019/02/hot-weather-temperatures.jpg';
   }
-}
+};
 
 const converter = (num) => {
-  return ((num * 9) / 5) + 32;
-}
+    return ((num * 9) / 5) + 32;
+};
 
 const weather = () => {
   const city = document.getElementById('city').value;
@@ -46,7 +46,7 @@ const weather = () => {
     minTemp1.innerHTML = `Min-temp = ${data.main.temp_min.toFixed(1)} Celsius`;
     maxTemp.innerHTML = `Max-temp = ${data.main.temp_max.toFixed(1)} Celsius`;
   });
-}
+};
 
 const fahrenheit = () => {
   const city = document.getElementById('city').value;
@@ -62,7 +62,7 @@ const fahrenheit = () => {
     minTemp1.innerHTML = `Min-temp = ${converter(data.main.temp_min).toFixed(1)} Fahrenheit`;
     maxTemp.innerHTML = `Max-temp = ${converter(data.main.temp_max).toFixed(1)} Fahrenheit`;
   });
-}
+};
 
 fah.addEventListener('click', fahrenheit);
 cel.addEventListener('click', weather);
