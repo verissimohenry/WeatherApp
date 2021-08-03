@@ -23,9 +23,9 @@ const picture = (data) => {
   }
 };
 
-function converter (num) {
+function converter(num) {
   return ((num * 9) / 5) + 32;
-};
+}
 
 const weather = () => {
   const city = document.getElementById('city').value;
