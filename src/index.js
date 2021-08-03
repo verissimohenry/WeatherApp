@@ -19,7 +19,7 @@ function picture(data) {
   } else if (data.main.temp < 20) {
     image.src = 'https://www.cardiomyopathy.org/images/news-section/sunshine_cropped_694_300.jpg';
   } else if (data.main.temp > 20) {
-     image.src = 'https://amayei.nyc3.digitaloceanspaces.com/2019/02/hot-weather-temperatures.jpg';
+    image.src = 'https://amayei.nyc3.digitaloceanspaces.com/2019/02/hot-weather-temperatures.jpg';
   }
 }
 
@@ -45,7 +45,7 @@ function weather() {
     picture(data);
     minTemp1.innerHTML = `Min-temp = ${data.main.temp_min.toFixed(1)} Celsius`;
     maxTemp.innerHTML = `Max-temp = ${data.main.temp_max.toFixed(1)} Celsius`;
-});
+  });
 }
 
 function fahrenheit() {
