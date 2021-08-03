@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body class="d-flex justify-content-center pt-2">
+    <div class="card" style="width: 18rem;">
+        <p id="error" class="text-center text-danger font-weight-bold"></p>
+        <div class="d-flex">
+            <input class="form-control" type="text" name="city" id="city">
+            <button id="btn" class="btn btn-primary">Search</button>
+        </div>
+        <img height="250" id="image" class="card-img-top"
+            src="https://scx2.b-cdn.net/gfx/news/hires/2019/weatherforec.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 id="city-1" class="card-title">City</h5>
+            <p id="weather-cast" class="card-text">Weather</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li id="temp" class="list-group-item">Temp</li>
+            <li id="min-temp" class="list-group-item">min-temp</li>
+            <li id="max-temp" class="list-group-item">max-temp</li>
+        </ul>
+        <div class="d-flex">
+
+            <button id="cel" class="btn btn-secondary">Celsius</button>
+            <button id="fah" class="btn btn-secondary">Fahrenheit</button>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
