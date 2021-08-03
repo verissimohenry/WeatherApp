@@ -2,6 +2,8 @@
 
 In this project, I built a basic weather application using JavaScript, Webpack and API. You can write the name of the city and click on search, to get all the weather information about the city.
 
+![screenshot](assest/image1.png)
+
 ## Built With
 
 - JavaScript
