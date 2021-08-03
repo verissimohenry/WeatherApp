@@ -7,11 +7,11 @@ const cel = document.getElementById('cel');
 const fah = document.getElementById('fah');
 const image = document.getElementById('image');
 const getData = (city) => {
-  const data = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api}&units=metric`).then((res) => res.json());
+  const data = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api}&units=metric`).then((res) => res.json() .catch((error) => { console.error('Error:', error);}));
   return data;
 };
 
-function picture(data) {
+const picture = (data) => {
   if (data.main.temp < 0) {
     image.src = 'https://kottke.org/plus/misc/images/vt-winter-wonderland.jpg';
   } else if (data.main.temp < 12) {
@@ -23,11 +23,11 @@ function picture(data) {
   }
 }
 
-function converter(num) {
+const converter = (num) => {
   return ((num * 9) / 5) + 32;
 }
 
-function weather() {
+const weather = () => {
   const city = document.getElementById('city').value;
 
   getData(city).then((data) => {
@@ -48,7 +48,7 @@ function weather() {
   });
 }
 
-function fahrenheit() {
+const fahrenheit = () => {
   const city = document.getElementById('city').value;
 
   getData(city).then((data) => {
