@@ -1,6 +1,6 @@
 # WeatherApp
 
-In this project, I built a basic weather application using JavaScript, Webpack and API. You can write the name of the city and click on search, to get all the weather information about the city.
+In this project, I built a basic weather application using JavaScript, Webpack and API. weather app that pulls from the OpenWeatherMap API to allow users to search for and view the forecast in cities worldwide.
 
 ![screenshot](assest/image1.png)
 
